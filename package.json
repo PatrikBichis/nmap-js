@@ -1,0 +1,21 @@
+{
+  "name": "nmap-js",
+  "homepage": "https://github.com/x-firm/nmap-js/",
+  "author": {
+    "name": "Patrik Olsson",
+    "url": "http://www.x-firm.com"
+  },
+  "description": "Node.js module for fetching information about all devices on the network",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/x-firm/nmap-js.git"
+  },
+   "main": "nmap",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://rem.mit-license.org"
+    }
+  ]
+}
