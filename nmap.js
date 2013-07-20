@@ -10,7 +10,7 @@ function nmap () {
 
  	var child;
 
- 	if(process.platform === 'darwin'){
+ 	if(process.platform === 'linux' || process.platform === 'darwin'){
  		console.log(process.platform);
  		var networkInterfaces = os.networkInterfaces();
 		var net = networkInterfaces.eth0[0].address;
@@ -19,7 +19,7 @@ function nmap () {
 
 	//Now shows name if lookup is possible and mac / ip-address.
 	this.findActiveHosts = function(callback) {
-		if(process.platform === 'darwin'){
+		if(process.platform === 'linux' || process.platform === 'darwin'){
 			var str = "sudo nmap --system-dns -sn " + net + " | sed '2d' | head -n -1 | sed '/Host is up/d'"
 			child = exec(str, function (error, stdout, stderr) {
 				if (error !== null) {
